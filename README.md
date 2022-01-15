@@ -1,4 +1,4 @@
-# KataFizzBuzz
+# Ejercicios PHP de exercism.org
 
 ## Requiered
 
@@ -15,19 +15,35 @@
 or
 - composer test
 
-### Escribe un programa que imprima los números del 1 al 100:
+### Resuelve ejercicio "Robot Simulator" de Exercism:
 
-Aplica las siguientes normas:
+Write a robot simulator.
 
-Etapa 1:
-- Devuelve Fizz si el número es divisible por 3.
-- Devuelve Buzz si el número es divisible por 5.
-- Devuelve FizzBuzz si el número es divisible por 3 y por 5.
-- Devuelve el mismo número si no se cumple nada de lo anterior.
+A robot factory's test facility needs a program to verify robot movements.
 
-Nuevos requerimientos:
+The robots have three possible movements:
 
-Etapa 2
+turn right
+turn left
+advance
+Robots are placed on a hypothetical infinite grid, facing a particular direction (north, east, south, or west) at a set of {x,y} coordinates, e.g., {3,8}, with coordinates increasing to the north and east.
 
-- Devuelve Fizz si el número es divisible por 3 o si contiene un 3. (Ej.: Fizz si el número es 534) 
-- Devuelve Buzz si el número es divisible por 5 o si contiene un 5. (Ej.: Buzz si el número es 25).
+The robot then receives a number of instructions, at which point the testing facility verifies the robot's new position, and in which direction it is pointing.
+
+The letter-string "RAALAL" means:
+Turn right
+Advance twice
+Turn left
+Advance once
+Turn left yet again
+Say a robot starts at {7, 3} facing north. Then running this stream of instructions should leave it at {9, 4} facing west.
+
+
+### Resuelve ejercicio "Anagram" de Exercism:
+Instructions
+An anagram is a rearrangement of letters to form a new word. Given a word and a list of candidates, select the sublist of anagrams of the given word.
+
+Given "listen" and a list of candidates like "enlists" "google" "inlets" "banana" the program should return a list containing "inlets".
+
+The skipped tests near the bottom of the anagram_test.php are Stretch Goals, they are optional. They require the usage of mb_string functions, which aren't installed by default with every version of PHP.
+
