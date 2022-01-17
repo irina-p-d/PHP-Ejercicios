@@ -6,7 +6,7 @@ namespace Tests;
 use PHPUnit\Framework\TestCase;
 use App\Robot;
 
-class RobotSimulatorTest extends TestCase {
+class RobotTest extends TestCase {
 
    
     /**

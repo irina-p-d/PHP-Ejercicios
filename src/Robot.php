@@ -9,16 +9,16 @@ class Robot {
         DIRECTION_EAST  = [  1,  0 ],
         DIRECTION_SOUTH = [  0, -1 ],
         DIRECTION_WEST  = [ -1,  0 ];
-    public
-        $position,
-        $direction;
+
+    public $position, $direction;
+    
     public function __construct(array $position, array $direction) {
         assert(count($position) == 2);
         $this->position = $position;
         $this->direction = $direction;
     }
-    public function turnRight(): Robot {
-        [$x, $y] = $this->direction;
+    public function turnRight(): Robot { 
+       [$x, $y]  = $this->direction;
         $this->direction = [$y, -$x];
         return $this;
     }
